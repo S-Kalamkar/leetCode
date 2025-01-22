@@ -4,7 +4,7 @@ def firstBadVersion(n: int) -> int:
         while l < r:
             m = (l + r) // 2
 
-            if isBadVersion(m):
+            if isBadVersion(m): # type: ignore
                 r = m 
             else:
                 l = m + 1
